@@ -1,0 +1,695 @@
+/* ================== GLOBAL ================== */
+* {
+    box-sizing: border-box;
+    font-family: "Tajawal", sans-serif;
+    
+}
+
+body {
+    margin: 0;
+    background: #e0c2d1;
+    direction: rtl;
+}
+
+/* ================== LAYOUT ================== */
+.admin-wrapper {
+    display: flex;
+    min-height: 100vh;
+    background: #e0c2d1;
+}
+
+/* ================== SIDEBAR ================== */
+
+.sidebar {
+    width: 260px;
+    background: #ffffff; /* نفس اللون */
+    color: #ffffff;
+
+    padding: 28px 22px;
+
+    position: fixed;
+    top: 20px;        /* ⬅️ مسافة من فوق */
+    right: 20px;      /* ⬅️ مسافة من اليمين */
+    bottom: 20px;     /* ⬅️ مسافة من تحت */
+
+    border-radius: 22px; /* ⬅️ هذا المهم (الدائرية) */
+
+    box-shadow: 0 12px 30px rgba(0,0,0,0.2);
+}
+
+ .sidebar-logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 35px;
+    justify-content: center;
+}
+
+.sidebar-logo img {
+    width: 42px;
+    height: 42px;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+.sidebar-logo span {
+    font-size: 18px;
+    font-weight: 800;
+    color: #6B4A54;
+}
+
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar li {
+    margin-bottom: 12px;
+}
+
+.sidebar a {
+    display: block;
+    padding: 12px 16px;
+    border-radius: 14px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.sidebar a:hover {
+    background: #f0f1f8;
+}
+
+.sidebar .logout a {
+    background: #ffecec;
+    color: #b00020;
+}
+
+/* ================== MAIN ================== */
+.main-content {
+    margin-right: 300px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ================== TOPBAR ================== */
+/* .topbar {
+    height: 30px;
+    background: #e0c2d1;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 18px 25px;
+    box-shadow: none;
+    border: none;
+    text-align: right;
+    direction: rtl;
+    margin-top: 25px;
+} */
+
+/* ================== CONTENT ================== */
+.content {
+    padding: 30px;
+}
+
+/* ================== DASHBOARD ================== */
+.page-title {
+    font-size: 26px;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: #fff;
+    padding: 25px;
+    border-radius: 18px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+.card span {
+    font-size: 15px;
+    color: #777;
+}
+
+.card strong {
+    font-size: 28px;
+    display: block;
+    margin-top: 10px;
+}
+
+/* ================== USERS PAGE ================== */
+/* ================= GLOBAL ================= */
+* {
+    box-sizing: border-box;
+    font-family: "Tajawal", sans-serif;
+}
+
+body {
+    margin: 0;
+    background: #f4f6fb;
+    direction: rtl;
+}
+
+/* ================= LAYOUT ================= */
+.admin-wrapper {
+    display: flex;
+    min-height: 100vh;
+}
+
+
+.sidebar a:hover {
+    background: #E6C1D3;
+    color: #6B4A54;
+}
+
+.sidebar .logout a {
+    background: #fee2e2;
+    color: #b91c1c;
+}
+
+/* ================= PAGE TITLE ================= */
+.page-title {
+    font-size: 26px;
+    font-weight: 800;
+    margin-bottom: 25px;
+    color: #1f2937;
+}
+
+/* ================= TOOLBAR ================= */
+.table-toolbar {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.table-toolbar input,
+.table-toolbar select {
+    height: 42px;
+    padding: 0 14px;
+    border-radius: 10px;
+    border: 1px solid #e5e7eb;
+    font-size: 14px;
+    background: #fff;
+    outline: none;
+    transition: 0.25s ease;
+}
+
+.table-toolbar input {
+    width: 240px;
+}
+
+.table-toolbar select {
+    width: 150px;
+    cursor: pointer;
+}
+
+.table-toolbar input:focus,
+.table-toolbar select:focus {
+    border-color: #6366f1;
+    box-shadow: 0 0 0 3px rgba(99,102,241,0.15);
+}
+
+/* ================= TABLE ================= */
+.table-wrapper {
+    background: #ffffff;
+    padding: 22px;
+    border-radius: 18px;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+}
+
+.admin-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.admin-table thead {
+    background: #1f2937;
+}
+
+
+.admin-table td {
+    padding: 14px;
+    border-bottom: 1px solid #eee;
+    font-size: 14px;
+    color: #6B4A54;
+}
+
+.admin-table tr:hover {
+    background: #f0f6fc;
+}
+.admin-table th {
+    background: #E6C1D3;
+    color: #6B4A54;
+    padding: 14px;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: right;
+    
+}
+
+/* .admin-table th:hover {
+    background: #eff2f5;
+    color: #fff;
+} */
+
+
+/* ================= ROLE BADGE ================= */
+.role {
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 700;
+    display: inline-block;
+}
+
+.role.admin {
+    background: #fee2e2;
+    color: #b91c1c;
+}
+
+.role.user {
+    background: #e0e7ff;
+    color: #3730a3;
+}
+
+/* ================= ACTION BUTTONS ================= */
+.actions {
+    display: flex;
+    gap: 8px;
+}
+
+.btn {
+    padding: 6px 14px;
+    border-radius: 8px;
+    font-size: 13px;
+    border: none;
+    cursor: pointer;
+    transition: 0.25s ease;
+}
+
+.btn.edit {
+    background: #e0e7ff;
+    color: #3730a3;
+    text-decoration: none !important;
+}
+
+.btn.edit:hover {
+    background: #c7d2fe;
+}
+
+.btn.delete {
+    background: #fee2e2;
+    color: #b91c1c;
+}
+
+.btn.delete:hover {
+    background: #fecaca;
+}
+
+.btn.success {/**/
+    background: #6B4A54;
+    color: #fff;
+    text-decoration: none !important;
+    
+}
+
+.btn.success:hover {
+    background: #E6C1D3;
+}
+
+.btn.cancel {
+    background: #e5e7eb;
+    color: #374151;
+}
+
+.btn.cancel:hover {
+    background: #d1d5db;
+}
+
+.btn.danger {
+    background: #dc2626;
+    color: #fff;
+}
+
+.btn.danger:hover {
+    background: #b91c1c;
+}
+
+/* ================= MODAL ================= */
+.modal {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.45);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.modal-content {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 20px;
+    width: 380px;
+    animation: popIn 0.3s ease;
+}
+
+.modal-title {
+    font-size: 20px;
+    font-weight: 800;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* ================= FORM ================= */
+.form-group {
+    margin-bottom: 14px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #374151;
+}
+
+.form-group input {
+    width: 100%;
+    height: 42px;
+    padding: 0 12px;
+    border-radius: 10px;
+    border: 1px solid #e5e7eb;
+    font-size: 14px;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #6366f1;
+    box-shadow: 0 0 0 3px rgba(99,102,241,0.15);
+}
+
+/* ================= MODAL ACTIONS ================= */
+.modal-actions {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+}
+.modal-actions a {
+    text-decoration: none !important;
+}
+
+/* ================= ANIMATION ================= */
+@keyframes popIn {
+    from {
+        transform: scale(0.85);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+/*تنسيق شاشة الحجوزات */
+/* TOOLBAR */
+.table-toolbar {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.table-toolbar input,
+.table-toolbar select {
+    padding: 10px 14px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+}
+
+/* BADGES */
+.badge {
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.badge.confirmed {
+    background: #e6f4ea;
+    color: #137333;
+}
+
+.badge.pending {
+    background: #fff4e5;
+    color: #b45309;
+}
+
+.badge.cancelled {
+    background: #fde8e8;
+    color: #b91c1c;
+}
+
+/* MODAL DETAILS */
+.details-list {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.details-list li {
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+    font-size: 14px;
+}
+/*payment page */
+.payment-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 18px;
+    margin-bottom: 40px;
+}
+
+.table-toolbar {
+    margin-top: 10px; /* ⬅️ مسافة خفيفة من فوق */
+}
+
+.payment-card {
+    background: #ffffff;
+    padding: 14px 16px;     /* ⬅️ كان 18px */
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    min-height: 75px; 
+}
+
+.payment-card span {
+    font-size: 1px;
+    color: #6b7280;
+}
+
+.payment-card strong {
+    display: block;
+    margin-top: 6px;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.payment-card.total {
+    border-right: 6px solid #2563eb;
+}
+
+.payment-card.cash {
+    border-right: 6px solid #16a34a;
+}
+
+.payment-card.online {
+    border-right: 6px solid #9333ea;
+}
+/* ================= ROOMS PAGE ================= */
+
+.room-image {
+    width: 60px;
+    height: 45px;
+    border-radius: 8px;
+    object-fit: cover;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+/* حالة الغرفة */
+.badge.available {
+    background: #e6f4ea;
+    color: #137333;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.badge.booked {
+    background: #fde8e8;
+    color: #b91c1c;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+/* أزرار الغرف */
+.btn-room {
+    padding: 6px 12px;
+    font-size: 13px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: 0.25s ease;
+}
+
+.btn-room.edit {
+    background: #e0e7ff;
+    color: #3730a3;
+    text-decoration: none !important;
+}
+
+.btn-room.edit:hover {
+    background: #c7d2fe;
+}
+
+.btn-room.delete {
+    background: #fee2e2;
+    color: #b91c1c;
+}
+
+.btn-room.delete:hover {
+    background: #fecaca;
+}
+
+/* فلترة الغرف */
+.rooms-toolbar {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.rooms-toolbar input,
+.rooms-toolbar select {
+    height: 42px;
+    padding: 0 14px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+}
+/* ===== ADD ROOM FORM ===== */
+/* ================= ADD ROOM FORM ================= */
+.add-room-wrapper {
+    max-width: 520px;          /* ⬅️ عرض أصغر */
+    margin: 40px auto;         /* ⬅️ في النص */
+    background: #ffffff;
+    padding: 30px 32px;
+    border-radius: 20px;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+}
+
+.form-group {
+    margin-bottom: 16px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    height: 42px;
+    padding: 0 14px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    outline: none;
+    border-color: #6366f1;
+    box-shadow: 0 0 0 3px rgba(99,102,241,0.15);
+}
+/*رقم الغرفة غلط*/
+.alert.error {
+    background: #fee2e2;
+    color: #b91c1c;
+    padding: 12px 16px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+/*فلتر الغرف*/
+.rooms-toolbar {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.room-filter {
+    height: 42px;
+    padding: 0 14px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+    background: #fff;
+    cursor: pointer;
+}
+
+.room-filter:focus {
+    outline: none;
+    border-color: #6366f1;
+    box-shadow: 0 0 0 3px rgba(99,102,241,0.15);
+}
+/*متع شاشة الرئيسية */
+/* حجز موعد دخوله اليوم */
+/* 🟢 دخول اليوم */
+.checkin-today {
+    background: #e6f4ea !important;
+    border-right: 4px solid #16a34a;
+}
+
+/* 🟡 خروج اليوم (غرف تبي تفضى) */
+.checkout-today {
+    background: #f09595 !important;
+    border-right: 4px solid #f01616;
+}
+
+/* badges */
+.badge.confirmed {
+    background: #dcfce7;
+    color: #166534;
+}
+
+.badge.pending {
+    background: #fef3c7;
+    color: #92400e;
+}
+
+/* عنوان الجدول في الداشبورد */
+.card h3 {
+    font-size: 18px;
+    font-weight: 800;
+}
+/*الغرفة الاكثر حجز */
+.badge.info {
+    background: #e0f2fe;
+    color: #0369a1;
+    font-weight: 700;
+}
